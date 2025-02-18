@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scheme Guidance</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#schemes">Schemes</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="container">
+      <h1>Welcome to Scheme Guidance</h1>
+      <p align="justify">Your one-stop destination to learn about various government schemes and how to apply for them.</p>
+    </div>
+  </section>
+
+  <!-- Schemes Section -->
+  <section id="schemes">
+    <div class="container">
+      <h2>Featured Schemes</h2>
+      <div class="scheme-cards">
+        <div class="card">
+          <h3>Scheme 1: Education Grant</h3>
+          <p>This scheme offers financial assistance for students to pursue higher education.</p>
+          <button onclick="showDetails('education-grant')">Learn More</button>
+        </div>
+        <div class="card">
+          <h3>Scheme 2: Farmers Subsidy</h3>
+          <p>This scheme helps farmers with subsidies for agricultural equipment and seeds.</p>
+          <button onclick="showDetails('farmers-subsidy')">Learn More</button>
+        </div>
+        <div class="card">
+          <h3>Scheme 3: Health Insurance</h3>
+          <p>Provides affordable health insurance for low-income families.</p>
+          <button onclick="showDetails('health-insurance')">Learn More</button>
+        </div>
+        <div class="card">
+            <h3>Scheme 4: Health Insurance</h3>
+            <p>Provides affordable health insurance for low-income families.</p>
+            <button onclick="showDetails('health-insurance')">Learn More</button>
+          </div>
+          <div class="card">
+            <h3>Scheme 5: Health Insurance</h3>
+            <p>Provides affordable health insurance for low-income families.</p>
+            <button onclick="showDetails('health-insurance')">Learn More</button>
+          </div>
+      </div>
+
+      <!-- Scheme Details Modal -->
+      <div id="scheme-details" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeDetails()">&times;</span>
+          <h3 id="scheme-title"></h3>
+          <p id="scheme-description"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We provide detailed guidance on various government schemes to help individuals and families benefit from available support programs.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>If you need further assistance, feel free to reach out to us.</p>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Scheme Guidance. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
